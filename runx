@@ -1,0 +1,4 @@
+setxkbmap -option "ctrl:nocaps"
+xsetroot -solid "#0A4251" -cursor_name left_ptr
+xmodmap .xmod_defaults
+xrandr -s 5

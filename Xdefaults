@@ -1,0 +1,10 @@
+XTerm*background:               #000000
+XTerm*foreground:               #A29C32
+URxvt*background:               #000000
+URxvt*foreground:               #A29C32
+URxvt*scrollColor:              #000000
+# URxvt*font:                     xft:Inconsolata:size=18
+# URxvt*font:                     7x14
+URxvt*font:                     fixed
+URxvt*termName:                 rxvt-256color
+gnuplot*reverseVideo:           on

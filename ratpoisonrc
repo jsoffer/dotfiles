@@ -1,0 +1,98 @@
+escape F20
+
+set font fixed
+
+definekey top XF86WWW exec daemon /home/jaime/OperaDownloads/opera-dir/opera -pd ~/.opera-main
+definekey top XF86Mail exec daemon /home/jaime/OperaDownloads/opera-dir/opera -pd ~/.opera-fb
+definekey top S-XF86WWW exec daemon /home/jaime/OperaDownloads/opera-dir/opera -pd ~/.opera-trusted
+definekey top S-XF86Mail exec daemon /home/jaime/OperaDownloads/opera-dir/opera -pd ~/.opera-gmail
+
+bind C-v exec urxvtc -e vim -i ~/.vimtempini -u .vimnocompat
+unbind v
+bind v exec urxvtc -e vim
+unbind e
+bind e exec urxvtc -e emacs
+unbind g
+bind g exec urxvtc -e ghci
+unbind c
+bind c exec urxvtc
+unbind k
+bind k delete
+unbind t
+bind t exec urxvtc -e top
+unbind Z
+bind Z exec rp_run_in_rxvt.sh
+unbind z
+bind z exec rp_show.sh
+
+bind Escape exec perl -e 'select(undef,undef,undef,.1)' && xset dpms force suspend
+
+definekey top XF86AudioPlay exec urxvtc -e cmus
+definekey top XF86AudioLowerVolume exec mixer pcm -5
+definekey top XF86AudioRaiseVolume exec mixer pcm +5
+definekey top F32 exec cmus-remote -u
+
+definekey top XF86Sleep rpwsp
+definekey top XF86PowerOff rpwsn
+
+definekey top F31 exec xrandr -s 8
+definekey top F30 exec xrandr -s 5
+definekey top XF86AudioStop exec song.sh
+
+bind Print exec xrandr -s 0
+bind Scroll_Lock exec xrandr -s 13
+bind Pause exec xrandr -s 12
+
+bind F12 gravity center
+bind Delete ratclick
+bind End ratclick 2
+bind Next ratclick 3
+bind C-d quit
+startup_message off
+
+exec rpws init 6 -k
+bind F1 rpws1
+bind F2 rpws2
+bind F3 rpws3
+bind F4 rpws4
+bind F5 rpws5
+bind F6 rpws6
+bind C-F1 gmove default
+bind C-F2 gmove wspl2
+bind C-F3 gmove wspl3
+bind C-F4 gmove wspl4
+bind C-F5 gmove wspl5
+bind C-F6 gmove wspl6
+
+unmanage MPlayer
+
+set wingravity center
+
+bind ntilde colon
+
+# less clutter
+unbind C-a
+unbind C-b
+unbind C-c
+unbind C-A
+unbind C-f
+unbind C-g
+unbind C-i
+unbind C-K
+unbind K
+unbind C-l
+unbind C-m
+unbind C-n
+unbind C-p
+unbind C-r
+unbind C-s
+unbind C-S
+unbind C-u
+unbind C-w
+unbind C-x
+unbind C-apostrophe
+unbind C-underscore
+unbind Return
+unbind C-Return
+unbind C-space
+unbind C-V

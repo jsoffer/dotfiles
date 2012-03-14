@@ -1,0 +1,5 @@
+Starting X:
+
+$ daemon urxvtd -q
+$ daemon X -nolisten tcp && sleep 2 && urxvtc -geometry 120x60 && logout
+$ sh .runx && daemon ratpoison

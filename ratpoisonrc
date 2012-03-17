@@ -16,8 +16,10 @@ unbind g
 bind g exec urxvtc -e ghci
 unbind c
 bind c exec urxvtc
+unbind j
+bind j ratclick 1
 unbind k
-bind k delete
+bind k ratclick 2
 unbind t
 bind t exec urxvtc -e top
 unbind Z
